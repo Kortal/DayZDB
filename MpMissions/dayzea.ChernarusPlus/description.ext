@@ -1,0 +1,48 @@
+respawn = "BASE";
+respawndelay = 20;
+onLoadMission="DayZ: Chargement en cours...";
+OnLoadIntro = "YPIKAY!";
+OnLoadIntroTime = true;
+OnLoadMissionTime = false;
+destroyDisconnected = false;
+
+// roleless missions
+scriptedPlayer = true;//???
+
+disableChannels[]={1,2,6};
+
+class Header
+{
+ gameType = COOP;            //DM, Team, Coop, ...
+ minPlayers = 1;             //min # of players the mission supports
+ maxPlayers = 128;            //Max # of players the mission supports
+};
+
+//#include "dialogs\baseClasses.hpp"
+//#include "dialogs\DZ_CharacterCreation.hpp"
+//#include "test\config.cpp"
+
+//////////////////////////////////////////////////
+// DAY&WEATHER SCRIPT PARAMETERS
+//////////////////////////////////////////////////
+class Params
+{
+    class DayTime
+    {
+		//paramsArray[0]
+		title = "Time Of Day";
+        values[] = {1, 2, 3, 4, 5, 6, 7, 8};
+		texts[] = {"Random", "Early Morning", "Morning", "Noon", "Sundown", "Night with Full Moon", "Dark Night", "Server Time"};
+        default = 0;
+	};
+	
+	class Weather
+    {
+		// paramsArray[1]
+        title = "Weather:";
+        values[] = {1, 2, 3, 4, 5, 6};
+        texts[] = {"Random", "Clear", "Partly Cloudy", "Cloudy", "Overcast", "Storm"};
+        default = 0;
+	};
+};
+
