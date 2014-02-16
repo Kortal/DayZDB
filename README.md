@@ -1,4 +1,6 @@
 DayZDB
 ======
 
-DayZ DataBase
+DayZ DataBase for server v0.36
+
+
